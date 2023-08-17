@@ -24,7 +24,16 @@ public class Bird extends Animal implements Flying , Comparable<Bird>{
         this.age = age;
     }
 
+    @Markabel(value="walk method")
+    private void walk(String name,Integer speed){
+        System.out.println("name: " + name + "speed :"+ speed);
+    }
 
+
+    @Markabel(value="talk method")
+    public void talk(String name,String message){
+        System.out.println("name: " + name + "talk :"+ message);
+    }
     @Override
     public void fly() {
         System.out.println("我飞的很快");
